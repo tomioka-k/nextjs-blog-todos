@@ -24,7 +24,7 @@ export default function TaskPage({ staticfilterdTasks }) {
     <Layout title="task page">
       <ul>
         {filteredTasks?.map((task) => (
-          <Task key={task.id} task={task} />
+          <Task key={task.id} task={task} taskDeleted={mutate} />
         ))}
       </ul>
 
